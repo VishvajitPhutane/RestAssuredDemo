@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.extent_report.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="SanityTest(failed)">
+    <classes>
+      <class name="com.notes.CreateNoteLoginAllTCs">
+        <methods>
+          <include name="createNotes_TCS"/>
+          <include name="getToken"/>
+        </methods>
+      </class> <!-- com.notes.CreateNoteLoginAllTCs -->
+      <class name="com.notes.CreateNoteAllNegativeTCs">
+        <methods>
+          <include name="createNotes_TCS"/>
+          <include name="getToken"/>
+        </methods>
+      </class> <!-- com.notes.CreateNoteAllNegativeTCs -->
+      <class name="com.notes.Delete_Notes_Using_UI">
+        <methods>
+          <include name="DeleteNotes"/>
+          <include name="CloseBrowser"/>
+          <include name="getToken"/>
+        </methods>
+      </class> <!-- com.notes.Delete_Notes_Using_UI -->
+    </classes>
+  </test> <!-- SanityTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
